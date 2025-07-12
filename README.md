@@ -21,7 +21,7 @@ pip install torch pandas statsmodels numpy scikit-learn
 --
 
 ## Dataset
-Due to GitHub's storage limitations, only the test data is displayed in this repository. The test data has been uploaded to Google Drive. You can access the dataset using the following link: [Google Drive Dataset](https://drive.google.com/drive/folders/1d97Ox0in0WNW5miQZZ-zCo5xwq7QEivM).
+Due to GitHub's storage limitations, only the test data is displayed in this repository. The test data has been uploaded to Google Drive. You can access the dataset using the following link: [Google Drive Dataset](https://drive.google.com/drive/folders/1d97Ox0in0WNW5miQZZ-zCo5xwq7QEivM?usp=drive_link).
 
 
 ### Multimodal Features 
