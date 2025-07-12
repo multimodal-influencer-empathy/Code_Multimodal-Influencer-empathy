@@ -1,0 +1,426 @@
+{
+  "datasetCommonParams": {
+    "Empathy": {
+      "seq_lens": [
+        624,
+        624,
+        624
+      ],
+      "feature_dims": [
+        768,
+        74,
+        35
+      ],
+      "language": "ch",
+      "KeyEval": "Loss",
+      "need_data_aligned": true,
+      "need_model_aligned": true
+    }
+  },
+   "A1_Graph_MFN_L": {
+        "need_data_aligned": true,
+        "need_model_aligned": true,
+        "need_normalized": true,
+        "early_stop": 40,
+        "noW": true,
+        "noG": false,
+        "noM": false,
+         "abl": "l",
+      "hidden_dims": [128, 16, 128],
+    "memsize": 256,
+    "inner_node_dim": 128,
+    "NNConfig": {"drop": 0.2, "shapes": 256},
+    "gamma1Config": {"drop": 0.5, "shapes": 128},
+    "gamma2Config": {"drop": 0.2, "shapes": 128},
+    "outConfig": {"drop": 0.2, "shapes": 32},
+    "batch_size": 32,
+    "learning_rate": 0.002,
+    "weight_decay": 0.005
+  },
+   "A2_Graph_MFN_A": {
+    "need_data_aligned": true,
+  "need_model_aligned": true,
+  "need_normalized": true,
+     "with_control": false,
+   "hidden_dims": [128, 16, 128],
+  "memsize": 400,
+  "inner_node_dim": 128,
+
+  "NNConfig": {
+    "drop": 0.5,
+    "shapes": 64
+  },
+  "gamma1Config": {
+    "drop": 0.7,
+    "shapes": 64
+  },
+  "gamma2Config": {
+    "drop": 0.5,
+    "shapes": 256
+  },
+  "outConfig": {
+    "drop": 0.2,
+    "shapes": 128
+  },
+
+  "batch_size": 64,
+  "learning_rate": 0.0005,
+  "weight_decay": 0.0,
+  "noW": true,
+  "noG": false,
+  "noM": false,
+  "abl": "a"
+  },
+   "A3_Graph_MFN_I": {
+    "need_data_aligned": true,
+  "need_model_aligned": true,
+  "need_normalized": true,
+     "with_control": false,
+  "hidden_dims": [256, 32, 256],
+"memsize": 128,
+"inner_node_dim": 128,
+"NNConfig": {"drop": 0.5, "shapes": 32},
+"gamma1Config": {"drop": 0.0, "shapes": 256},
+"gamma2Config": {"drop": 0.7, "shapes": 128},
+"outConfig": {"drop": 0.2, "shapes": 32},
+"batch_size": 64,
+"learning_rate": 0.002,
+"weight_decay": 0.001,
+  "noW": true,
+  "noG": false,
+  "noM": false,
+  "abl": "v"
+  },
+   "A4_Graph_MFN_LA": {
+    "need_data_aligned": true,
+  "need_model_aligned": true,
+  "need_normalized": true,
+ "hidden_dims": [256, 32, 256],
+  "memsize": 128,
+  "inner_node_dim": 20,
+  "NNConfig": {
+    "drop": 0.0,
+    "shapes": 256
+  },
+  "gamma1Config": {
+    "drop": 0.7,
+    "shapes": 64
+  },
+  "gamma2Config": {
+    "drop": 0.5,
+    "shapes": 64
+  },
+  "outConfig": {
+    "drop": 0.0,
+    "shapes": 256
+  },
+  "batch_size": 32,
+  "learning_rate": 0.002,
+  "weight_decay": 0.0,
+     "noW": true,
+  "noG": false,
+  "noM": false,
+  "abl": "la"
+  },
+  "A5_Graph_MFN_LI": {
+    "need_data_aligned": true,
+  "need_model_aligned": true,
+  "need_normalized": true,
+ "hidden_dims": [128, 16, 128],
+  "memsize": 400,
+  "inner_node_dim": 64,
+  "NNConfig": {
+    "drop": 0.5,
+    "shapes": 32
+  },
+
+  "gamma1Config": {
+    "drop": 0.0,
+    "shapes": 256
+  },
+
+  "gamma2Config": {
+    "drop": 0.0,
+    "shapes": 128
+  },
+
+  "outConfig": {
+    "drop": 0.0,
+    "shapes": 128
+  },
+  "batch_size": 64,
+  "learning_rate": 0.01,
+  "weight_decay": 0.001,
+      "noW": true,
+  "noG": false,
+  "noM": false,
+  "abl": "lv"
+  },
+  "A6_Graph_MFN_AI": {
+    "need_data_aligned": true,
+  "need_model_aligned": true,
+  "need_normalized": true,
+  "hidden_dims": [256, 32, 256],
+  "memsize": 300,
+  "inner_node_dim": 128,
+
+  "NNConfig": {
+    "drop": 0.0,
+    "shapes": 32
+  },
+
+  "gamma1Config": {
+    "drop": 0.5,
+    "shapes": 256
+  },
+
+  "gamma2Config": {
+    "drop": 0.2,
+    "shapes": 64
+  },
+
+  "outConfig": {
+    "drop": 0.0,
+    "shapes": 128
+  },
+
+  "batch_size": 32,
+  "learning_rate": 0.002,
+  "weight_decay": 0.001,
+      "noW": true,
+  "noG": false,
+  "noM": false,
+  "abl": "av"
+  },
+   "A7_Graph_MFN": {
+    "need_data_aligned": true,
+    "need_model_aligned": true,
+    "need_normalized": true,
+    "hidden_dims": [
+      128,
+      16,
+      128
+    ],
+    "memsize": 400,
+    "inner_node_dim": 64,
+    "NNConfig": {
+      "drop": 0.0,
+      "shapes": 32
+    },
+    "gamma1Config": {
+      "drop": 0.0,
+      "shapes": 32
+    },
+    "gamma2Config": {
+      "drop": 0.7,
+      "shapes": 64
+    },
+    "outConfig": {
+      "drop": 0.0,
+      "shapes": 128
+    },
+    "batch_size": 64,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.0,
+    "noW": false,
+    "noG": false,
+    "noM": false,
+    "abl": "lav"
+  },
+    "A8_Graph_MFN_noM": {
+    "need_data_aligned": true,
+    "need_model_aligned": true,
+    "need_normalized": true,
+    "hidden_dims": [
+      64,
+      32,
+      64
+    ],
+    "memsize": 128,
+    "inner_node_dim": 128,
+    "NNConfig": {
+      "drop": 0.0,
+      "shapes": 32
+    },
+    "gamma1Config": {
+      "drop": 0.2,
+      "shapes": 256
+    },
+    "gamma2Config": {
+      "drop": 0.0,
+      "shapes": 32
+    },
+    "outConfig": {
+      "drop": 0.0,
+      "shapes": 64
+    },
+    "batch_size": 32,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.005,
+    "noW": false,
+    "noG": false,
+    "noM": true,
+          "abl": "lav"
+  },
+  "A9_Graph_MFN_noG": {
+    "need_data_aligned": true,
+    "need_model_aligned": true,
+    "need_normalized": true,
+    "hidden_dims": [
+      128,
+      16,
+      128
+    ],
+    "memsize": 256,
+    "inner_node_dim": 32,
+    "NNConfig": {
+      "drop": 0.2,
+      "shapes": 256
+    },
+    "gamma1Config": {
+      "drop": 0.2,
+      "shapes": 32
+    },
+    "gamma2Config": {
+      "drop": 0.0,
+      "shapes": 256
+    },
+    "outConfig": {
+      "drop": 0.5,
+      "shapes": 128
+    },
+    "batch_size": 32,
+    "learning_rate": 0.002,
+    "weight_decay": 0.005,
+    "noW": false,
+    "noG": true,
+    "noM": false,
+        "abl": "lav"
+  },
+  "A10_Graph_MFN_noW": {
+    "need_data_aligned": true,
+    "need_model_aligned": true,
+    "need_normalized": true,
+    "hidden_dims": [
+      128,
+      16,
+      128
+    ],
+    "memsize": 300,
+    "inner_node_dim": 20,
+    "NNConfig": {
+      "drop": 0.5,
+      "shapes": 64
+    },
+    "gamma1Config": {
+      "drop": 0.0,
+      "shapes": 64
+    },
+    "gamma2Config": {
+      "drop": 0.5,
+      "shapes": 128
+    },
+    "outConfig": {
+      "drop": 0.0,
+      "shapes": 256
+    },
+    "batch_size": 64,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.0,
+    "noW": true,
+    "noG": false,
+    "noM": false,
+    "abl": "lav"
+  },
+  "A11_EF_LSTM": {
+    "need_data_aligned": true,
+    "need_model_aligned": true,
+    "need_normalized": false,
+    "hidden_dims": 16,
+    "num_layers": 4,
+    "dropout": 0.4,
+    "batch_size": 32,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.0001
+  },
+  "A12_TFN": {
+    "need_data_aligned": false,
+    "need_model_aligned": false,
+    "need_normalized": true,
+    "hidden_dims": [
+      128,
+      32,
+      128
+    ],
+    "text_out": 128,
+    "post_fusion_dim": 16,
+    "dropouts": [
+      0.3,
+      0.3,
+      0.3,
+      0.3
+    ],
+    "batch_size": 32,
+    "learning_rate": 0.0005
+  },
+  "A13_LMF": {
+    "need_data_aligned": false,
+    "need_model_aligned": false,
+    "need_normalized": true,
+    "early_stop": 40,
+    "hidden_dims": [
+      256,
+      32,
+      256
+    ],
+    "dropouts": [
+      0.4,
+      0.4,
+      0.4,
+      0.4
+    ],
+    "rank": 5,
+    "batch_size": 64,
+    "learning_rate": 0.005,
+    "factor_lr": 0.0005,
+    "weight_decay": 0.005
+  },
+  "A14_MFN": {
+    "need_data_aligned": true,
+    "need_model_aligned": true,
+    "need_normalized": true,
+    "hidden_dims": [
+      256,
+      32,
+      256
+    ],
+    "memsize": 128,
+    "windowsize": 2,
+    "NN1Config": {
+      "drop": 0.5,
+      "shapes": 128
+    },
+    "NN2Config": {
+      "drop": 0.7,
+      "shapes": 32
+    },
+    "gamma1Config": {
+      "drop": 0.7,
+      "shapes": 256
+    },
+    "gamma2Config": {
+      "drop": 0.0,
+      "shapes": 32
+    },
+    "outConfig": {
+      "drop": 0.2,
+      "shapes": 128
+    },
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 0
+  }
+
+
+
+}
