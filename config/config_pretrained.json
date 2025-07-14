@@ -22,7 +22,7 @@
         "need_model_aligned": true,
         "need_normalized": true,
         "early_stop": 40,
-        "noW": true,
+        "noW": false,
         "noG": false,
         "noM": false,
          "abl": "l",
@@ -41,11 +41,9 @@
     "need_data_aligned": true,
   "need_model_aligned": true,
   "need_normalized": true,
-     "with_control": false,
    "hidden_dims": [128, 16, 128],
   "memsize": 400,
   "inner_node_dim": 128,
-
   "NNConfig": {
     "drop": 0.5,
     "shapes": 64
@@ -66,7 +64,7 @@
   "batch_size": 64,
   "learning_rate": 0.0005,
   "weight_decay": 0.0,
-  "noW": true,
+  "noW": false,
   "noG": false,
   "noM": false,
   "abl": "a"
@@ -75,7 +73,6 @@
     "need_data_aligned": true,
   "need_model_aligned": true,
   "need_normalized": true,
-     "with_control": false,
   "hidden_dims": [256, 32, 256],
 "memsize": 128,
 "inner_node_dim": 128,
@@ -86,7 +83,7 @@
 "batch_size": 64,
 "learning_rate": 0.002,
 "weight_decay": 0.001,
-  "noW": true,
+  "noW": false,
   "noG": false,
   "noM": false,
   "abl": "v"
@@ -117,7 +114,7 @@
   "batch_size": 32,
   "learning_rate": 0.002,
   "weight_decay": 0.0,
-     "noW": true,
+     "noW": false,
   "noG": false,
   "noM": false,
   "abl": "la"
@@ -151,7 +148,7 @@
   "batch_size": 64,
   "learning_rate": 0.01,
   "weight_decay": 0.001,
-      "noW": true,
+      "noW": false,
   "noG": false,
   "noM": false,
   "abl": "lv"
@@ -163,7 +160,6 @@
   "hidden_dims": [256, 32, 256],
   "memsize": 300,
   "inner_node_dim": 128,
-
   "NNConfig": {
     "drop": 0.0,
     "shapes": 32
@@ -187,7 +183,7 @@
   "batch_size": 32,
   "learning_rate": 0.002,
   "weight_decay": 0.001,
-      "noW": true,
+      "noW": false,
   "noG": false,
   "noM": false,
   "abl": "av"
