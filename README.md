@@ -2,7 +2,7 @@
 ## Empathy and Sales in Influencer Marketing
 
 ## Overview
-This repository contains the code and data used in the research paper "Empathy and Sales in Influencer Marketing". 
+This repository contains the code and data used in the research paper "Empathy Expressions and Sales in Influencer Marketing". 
 
 ## Installation
 Before running the scripts, ensure you have the following dependencies installed:
