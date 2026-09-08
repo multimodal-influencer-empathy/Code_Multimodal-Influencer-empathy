@@ -129,9 +129,9 @@ Each model is based on pretrained models and demonstrates the prediction results
 The code includes metrics for evaluating the model performance:
 - Acc2
 - F1 Score
-- Mean Absolute Error (MAE)
-- Correlation Coefficient
-- Loss
+- MAE
+- Corr
+ 
 
 
 
