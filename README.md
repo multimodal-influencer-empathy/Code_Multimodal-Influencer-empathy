@@ -1,8 +1,8 @@
 
-## Empathy and Sales in Influencer Marketing
+## When Perceived Empathy Sells: Multimodal Evidence from TikTok Influencers
 
 ## Overview
-This repository contains the code and data used in the research paper "Empathy Expressions and Sales in Influencer Marketing". 
+This repository contains the code and data used in the research paper "When Perceived Empathy Sells: Multimodal Evidence from TikTok Influencers". 
 
 ## Installation
 Before running the scripts, ensure you have the following dependencies installed:
