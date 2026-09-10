@@ -26,7 +26,7 @@ Due to GitHub's storage limitations, only the test data is displayed in this rep
 
 ### Multimodal Features 
 #### Vocal Features
-- **Tool Used**: Covarep.
+- **Tool Used**: COVERAP.
 - **Features**: 74 dimensions.
 
 
