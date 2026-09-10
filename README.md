@@ -26,17 +26,17 @@ Due to GitHub's storage limitations, only the test data is displayed in this rep
 
 ### Multimodal Features 
 #### Vocal Features
-- **Tool **: COVERAP.
+- **Tool**: COVERAP.
 - **Features**: 74 dimensions.
 
 
 #### Visual Features
-- **Tool **: OpenFace 2.0.
+- **Tool**: OpenFace 2.0.
 - **Features**: 35 dimensions.
 
 
 #### Verbal Features
-- **Tool **: BERT.
+- **Tool**: BERT.
 - **Features**: 768 dimensions.
 
 
