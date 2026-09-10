@@ -26,13 +26,15 @@ class MetricsTop:
 
     def __eval_regression(self, y_pred, y_true):
         """Compute Acc2, F1, MAE, Corr. Return dict of rounded metrics."""
-        # Convert PyTorch tensors to numpy arrays
-        y_pred = np.array([y.detach().numpy() for y in y_pred])
-        y_true = np.array([y.detach().numpy() for y in y_true])
+        # Handle both numpy arrays and PyTorch tensors
+        if isinstance(y_pred, torch.Tensor):
+            y_pred = y_pred.detach().cpu().numpy()
+        if isinstance(y_true, torch.Tensor):
+            y_true = y_true.detach().cpu().numpy()
 
         # Flatten predictions and true values for correlation calculation
-        y_pred = [i[0] for i in y_pred]
-        y_true = [i[0] for i in y_true]
+        y_pred = np.array(y_pred).flatten()
+        y_true = np.array(y_true).flatten()
         corr = np.corrcoef(y_pred, y_true)[0][1]
 
         # Mean Absolute Error (MAE)
