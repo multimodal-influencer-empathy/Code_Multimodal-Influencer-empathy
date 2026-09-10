@@ -29,8 +29,8 @@ def do_test(args, model_name, dataset_name, model, dataloader):
 
             train_loss = eval_loss / len(dataloader)
             pred, true = torch.cat(y_pred), torch.cat(y_true)
-            y_pred.append(pred.cpu().numpy())
-            y_true.append(true.cpu().numpy())
+            y_pred = pred.cpu().numpy()
+            y_true = true.cpu().numpy()
 
     eval_results = metrics(pred, true)
     eval_results["Loss"] = round(train_loss, 4)
